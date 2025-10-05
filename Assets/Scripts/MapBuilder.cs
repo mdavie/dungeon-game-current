@@ -90,9 +90,9 @@ public class MapBuilder : MonoBehaviour
       decal.transform.parent = cellGameObj.transform;
     }
 
-    if (cell.monster != null) {
-      addMonster(cell, cellGameObj);
-    }
+    //if (cell.monster != null) {
+    //  addMonster(cell, cellGameObj);
+    //}
 
     // Place into the world
     cellGameObj.transform.position = new Vector3(cell.x * Main.CELL_SIZE, 0, -(cell.y * Main.CELL_SIZE));
